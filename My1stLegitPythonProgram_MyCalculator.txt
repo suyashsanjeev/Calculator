@@ -1,0 +1,96 @@
+from math import factorial
+from math import sqrt
+from math import pi
+print('This is  a calculator')
+print('Enter username')
+tryagain = 'yes'
+
+ADD = '+'
+MULTIPLY = '*'
+SUBTRACT = '-'
+DIVIDE = '/'
+TWODIVIDE = '//'
+PERCENT = '%'
+FACTORIAL = '!'
+TWOPERCENT = '%%'
+POWER = '^'
+SQRT = 'sqrt'
+HYPOTENUSE = 'hyp'
+RDIVIDE = '#%'
+AREACIRCLE = 'OA'
+CIRCUMFERENCECIRCLE = 'OC' 
+DIAMETERCIRCLE = 'OD'
+
+v = input()
+if v == 'Suyash':
+    print('You are a legend. I am sorry for asking you for a password, but my associate Bob says it is safety protocol.')
+if v == 'Suvansh':
+    print('You are a legend. I am sorry for asking you for a password, but my associate Bob says it is safety protocol.')
+print(v, 'enter password to access calculator')
+password = input()
+if password != 'lightningboy2003':
+    print('Password incorrect')
+elif password == 'lightningboy2003':
+    print('Welcome to SuyashCalculator.')
+    while tryagain.lower() == 'yes':
+        print('+ is add\n'
+            + '- is subtract\n'
+            + '* is multiply\n'
+            + '/ is divide\n'
+            + '// is divide and knock off everything after the decimal\n'
+            + '% is remainder\n'
+            + '! is factorial\n'
+            + '%% is percent of something\n'
+            + '^ is to the power of\n'
+            + 'sqrt is square root\n'
+            + 'hyp is finding the hypotenuse if x and y are legs of a right triangle\n'
+            + '#% is division in the form of something remainder something\n'
+            + 'OA is area of a circle\n'
+            + 'OC is circumference of a circle\n'
+            + 'OD is diameter of a circle\n')
+        print('What is your operation?')
+        w = input()
+        print('What is your 1st number?')
+        x = int(input())
+        print('What is your 2nd number?')
+        y = int(input())
+        if w == '+':
+            print(x+y)
+        elif w == '*':
+            print(x*y)
+        elif w == '-':
+            print(x-y)
+        elif w == '/':
+            print(x+y)
+        elif w == '//':
+            print(x//y)
+        elif w == '%':
+            print(x%y)
+        elif w == '!':
+            print(factorial(x))
+        elif w == '%%':
+            print((x/100)* y)
+        elif w == '^':
+            print(x**y)
+        elif w == 'sqrt':
+            print(sqrt(x))
+        elif w == 'hyp':
+            print(sqrt((x**2) + (y**2)))
+        elif w == '#%':
+            print(x//y, 'R', x%y)
+        elif w == 'OA':
+            print('What is the radius of your circle?')
+            u = int(input())
+            print((u**2)*pi)
+        elif w == 'OC':
+            print('What is the radius of your circle?')
+            u = int(input())
+            print(2*u*pi)
+        elif w == 'OD':
+            print('What is the radius of your circle?')
+            u = int(input())
+            print(2*u)
+        else:
+            print('Syntax Error')
+        print('Do you want to continue?')
+        tryagain = input()

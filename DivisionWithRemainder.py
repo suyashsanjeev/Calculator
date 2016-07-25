@@ -1,0 +1,5 @@
+print('wut is ur #')
+a=int(input())
+print('wut is ur 2nd #')
+b=int(input())
+print('Answer is', a//b, 'R', a%b)
